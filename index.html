@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>𝗡𝗨𝗠𝗕𝗘𝗥 𝗣𝗥𝗘𝗗𝗜𝗖𝗧𝗜𝗢𝗡</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #8b4c00, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 9:16 container */
+.container {
+    width: 100%;
+    max-width: 360px;
+    height: 640px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+/* badge */
+.badge {
+    background: rgba(0,255,150,0.2);
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* image */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* heading */
+h1 {
+    margin: 10px 0;
+    font-size: 26px;
+}
+
+/* sub text */
+.sub {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+/* timer */
+.timer {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.timer span {
+    color: #00ff9c;
+    font-weight: bold;
+}
+
+/* button */
+.btn {
+    display: block;
+    margin: 15px auto;
+    padding: 15px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    background: linear-gradient(90deg, #ff5f00, #ff9900);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* footer text */
+.footer {
+    font-size: 12px;
+    color: #bbb;
+    margin-top: 15px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="badge"> Colour Trading Updates & Insights</div>
+
+    <img src="https://image2url.com/r2/default/images/1773939879131-7349316c-1b2e-4b5a-901c-c2c8e9785bdd.jpg" class="avatar">
+
+    <h1>𝗡𝗨𝗠𝗕𝗘𝗥 𝗣𝗥𝗘𝗗𝗜𝗖𝗧𝗜𝗢𝗡</h1>
+
+    <div class="sub">
+        Honest analysis • Match insights • Community driven
+    </div>
+
+    <div class="timer">
+        FREE JOINING ENDS IN <span id="count">15</span>s
+    </div>
+
+    <button class="btn" id="btn">Free Join ➤</button>
+
+    <div class="footer">
+        Stay informed with transparent colour trading analysis
+        <br><br>
+        Disclaimer: This channel shares colour trading updates,
+        analysis, and general information for fans.
+    </div>
+
+</div>
+
+<script>
+let time = 30;
+let btn = document.getElementById("btn");
+
+let countdown = setInterval(() => {
+    time--;
+    document.getElementById("count").innerText = time;
+
+    if(time <= 0){
+        clearInterval(countdown);
+
+        // AUTO CLICK
+        btn.click();
+    }
+}, 1000);
+
+// Button Click Action
+btn.addEventListener("click", function(){
+    window.location.href = "https://t.me/+8RBKrCmsa0FjM2Vl"; // 👈 yaha apna link daal
+});
+</script>
+
+</body>
+</html>
